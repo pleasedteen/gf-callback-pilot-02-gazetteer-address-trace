@@ -1,0 +1,25 @@
+{
+  "revision_id": "rev-bad",
+  "note": "含冲突划转的修订（演示拒绝启用）：同日同旧区同街重叠门牌划给两个不同区",
+  "streets": [
+    {"id": "S1", "name": "中山路", "valid_from": "1949-01-01", "valid_to": null}
+  ],
+  "districts": [
+    {"id": "D2", "name": "第二区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [{"name": "第二区", "valid_from": "1949-01-01", "valid_to": null}]},
+    {"id": "D3", "name": "第三区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [{"name": "第三区", "valid_from": "1949-01-01", "valid_to": null}]},
+    {"id": "D4", "name": "第四区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [{"name": "第四区", "valid_from": "1949-01-01", "valid_to": null}]}
+  ],
+  "memberships": [
+    {"id": "MB1", "street_id": "S1", "district_id": "D2", "lo": 1, "hi": 100,
+     "valid_from": "1949-01-01", "valid_to": null}
+  ],
+  "transfers": [
+    {"id": "BX1", "effective_on": "1999-01-01", "street_id": "S1", "lo": 1, "hi": 40,
+     "from_district_id": "D2", "to_district_id": "D3"},
+    {"id": "BX2", "effective_on": "1999-01-01", "street_id": "S1", "lo": 30, "hi": 60,
+     "from_district_id": "D2", "to_district_id": "D4"}
+  ]
+}

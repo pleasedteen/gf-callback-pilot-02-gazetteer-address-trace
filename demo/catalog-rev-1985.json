@@ -1,0 +1,64 @@
+{
+  "revision_id": "rev-1985",
+  "note": "城区街巷与行政区目录（1949 年建档，含 1985 年撤并、1990/2010/2015 年划转）",
+  "streets": [
+    {"id": "S1", "name": "中山路", "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "S2", "name": "同文街", "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "S3", "name": "同文街", "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "S4", "name": "太平街", "valid_from": "1949-01-01", "valid_to": "1980-01-01"},
+    {"id": "S4", "name": "解放路", "valid_from": "1980-01-01", "valid_to": null}
+  ],
+  "districts": [
+    {"id": "D1", "name": "第一区", "established_on": "1949-01-01", "abolished_on": "1985-06-01",
+     "names": [{"name": "第一区", "valid_from": "1949-01-01", "valid_to": "1985-06-01"}]},
+    {"id": "D2", "name": "第二区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [
+       {"name": "第二区", "valid_from": "1949-01-01", "valid_to": "1990-01-01"},
+       {"name": "城中区", "valid_from": "1990-01-01", "valid_to": null}
+     ]},
+    {"id": "D3", "name": "第三区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [
+       {"name": "第三区", "valid_from": "1949-01-01", "valid_to": "1990-01-01"},
+       {"name": "城东区", "valid_from": "1990-01-01", "valid_to": null}
+     ]},
+    {"id": "D4", "name": "第四区", "established_on": "1949-01-01", "abolished_on": null,
+     "names": [{"name": "第四区", "valid_from": "1949-01-01", "valid_to": null}]}
+  ],
+  "memberships": [
+    {"id": "M1", "street_id": "S1", "district_id": "D1", "lo": 1, "hi": 99,
+     "valid_from": "1949-01-01", "valid_to": "1985-06-01"},
+    {"id": "M1B", "street_id": "S1", "district_id": "D1", "lo": 1, "hi": 99,
+     "valid_from": "1985-06-01", "valid_to": "1985-06-02"},
+    {"id": "M2", "street_id": "S1", "district_id": "D2", "lo": 100, "hi": 200,
+     "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "M3", "street_id": "S2", "district_id": "D1", "lo": 1, "hi": 50,
+     "valid_from": "1949-01-01", "valid_to": "1985-06-01"},
+    {"id": "M3B", "street_id": "S2", "district_id": "D1", "lo": 1, "hi": 50,
+     "valid_from": "1985-06-01", "valid_to": "1985-06-02"},
+    {"id": "M4", "street_id": "S3", "district_id": "D4", "lo": 1, "hi": 50,
+     "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "M5", "street_id": "S4", "district_id": "D3", "lo": 1, "hi": 80,
+     "valid_from": "1949-01-01", "valid_to": null},
+    {"id": "M6", "street_id": "S1", "district_id": "D2", "lo": 1, "hi": 50,
+     "valid_from": "1985-06-02", "valid_to": null},
+    {"id": "M7", "street_id": "S1", "district_id": "D3", "lo": 51, "hi": 99,
+     "valid_from": "1985-06-02", "valid_to": null},
+    {"id": "M8", "street_id": "S2", "district_id": "D2", "lo": 1, "hi": 30,
+     "valid_from": "1985-06-02", "valid_to": null}  ],
+  "transfers": [
+    {"id": "T1", "effective_on": "1985-06-01", "street_id": "S1", "lo": 1, "hi": 50,
+     "from_district_id": "D1", "to_district_id": "D2"},
+    {"id": "T2", "effective_on": "1985-06-01", "street_id": "S1", "lo": 51, "hi": 99,
+     "from_district_id": "D1", "to_district_id": "D3"},
+    {"id": "T3", "effective_on": "1985-06-01", "street_id": "S2", "lo": 1, "hi": 30,
+     "from_district_id": "D1", "to_district_id": "D2"},
+    {"id": "T4", "effective_on": "1995-03-01", "street_id": "S1", "lo": 1, "hi": 25,
+     "from_district_id": "D2", "to_district_id": "D4"},
+    {"id": "T5", "effective_on": "2000-09-01", "street_id": "S1", "lo": 1, "hi": 50,
+     "from_district_id": "D2", "to_district_id": "D3"},
+    {"id": "T6", "effective_on": "2010-01-01", "street_id": "S4", "lo": 1, "hi": 40,
+     "from_district_id": "D3", "to_district_id": "D2"},
+    {"id": "T7", "effective_on": "2015-07-01", "street_id": "S3", "lo": 1, "hi": 50,
+     "from_district_id": "D4", "to_district_id": "D2"}
+  ]
+}
